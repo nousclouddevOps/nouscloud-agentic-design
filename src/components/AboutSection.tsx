@@ -5,11 +5,20 @@ const AboutSection = () => {
   return (
     <section className="py-20 bg-white">
       <div className="container mx-auto px-6">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold text-secondary-foreground font-inter mb-4">
+            About Us
+          </h2>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            Bridging the gap between cutting-edge AI research and practical enterprise implementation
+          </p>
+        </div>
+        
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
-            <h2 className="text-4xl font-bold text-secondary-foreground font-inter">
+            <h3 className="text-3xl font-bold text-secondary-foreground font-inter">
               Enabling Enterprise AI Adoption
-            </h2>
+            </h3>
             <p className="text-lg text-muted-foreground leading-relaxed">
               NousCloud bridges the gap between cutting-edge AI research and practical enterprise implementation. We specialize in agentic AI systems that transform how organizations operate, scale, and innovate.
             </p>

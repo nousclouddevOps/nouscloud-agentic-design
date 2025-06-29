@@ -1,6 +1,5 @@
 
 import { useState } from "react";
-import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 
 const Navbar = () => {
@@ -8,7 +7,6 @@ const Navbar = () => {
 
   const navLinks = [
     { name: "About", href: "#about" },
-    { name: "Vision", href: "#vision" },
     { name: "Solutions", href: "#solutions" },
     { name: "Consulting", href: "#consulting" },
     { name: "Courses", href: "#courses" },
@@ -48,12 +46,13 @@ const Navbar = () => {
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
               </button>
             ))}
-            <Button 
-              className="bg-gradient-primary hover:opacity-90 text-white font-medium px-6"
-              onClick={() => window.open('#', '_blank')}
+            <a
+              href="#"
+              className="text-gray-700 hover:text-primary font-medium transition-colors duration-200 relative group"
             >
               AgentMarketplace
-            </Button>
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+            </a>
           </div>
 
           {/* Mobile menu button */}
@@ -81,12 +80,12 @@ const Navbar = () => {
                 </button>
               ))}
               <div className="px-3 py-2">
-                <Button 
-                  className="bg-gradient-primary hover:opacity-90 text-white font-medium w-full"
-                  onClick={() => window.open('#', '_blank')}
+                <a
+                  href="#"
+                  className="text-gray-700 hover:text-primary font-medium transition-colors duration-200"
                 >
                   AgentMarketplace
-                </Button>
+                </a>
               </div>
             </div>
           </div>
