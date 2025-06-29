@@ -3,9 +3,9 @@ import { Button } from "@/components/ui/button";
 
 const HeroSection = () => {
   return (
-    <section className="relative bg-gradient-primary min-h-screen flex items-center justify-center text-white overflow-hidden pt-16">
+    <section className="relative bg-gradient-to-br from-gray-50 to-gray-100 min-h-screen flex items-center justify-center text-gray-900 overflow-hidden pt-16">
       {/* Enhanced AI Network Background Pattern */}
-      <div className="absolute inset-0 opacity-30">
+      <div className="absolute inset-0 opacity-20">
         <svg className="w-full h-full" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
           {/* Neural Network Nodes - Larger and more visible */}
           <circle cx="100" cy="150" r="6" fill="currentColor" className="animate-pulse" />
@@ -72,14 +72,14 @@ const HeroSection = () => {
       </div>
       
       {/* Floating AI elements */}
-      <div className="absolute inset-0 opacity-20">
-        <div className="absolute top-1/4 left-1/4 w-4 h-4 bg-white rounded-full animate-bounce" style={{animationDelay: '0s', animationDuration: '3s'}}></div>
-        <div className="absolute top-1/3 right-1/4 w-3 h-3 bg-white rounded-full animate-bounce" style={{animationDelay: '1s', animationDuration: '4s'}}></div>
-        <div className="absolute bottom-1/3 left-1/3 w-2 h-2 bg-white rounded-full animate-bounce" style={{animationDelay: '2s', animationDuration: '5s'}}></div>
-        <div className="absolute bottom-1/4 right-1/3 w-3 h-3 bg-white rounded-full animate-bounce" style={{animationDelay: '0.5s', animationDuration: '3.5s'}}></div>
+      <div className="absolute inset-0 opacity-15">
+        <div className="absolute top-1/4 left-1/4 w-4 h-4 bg-gray-600 rounded-full animate-bounce" style={{animationDelay: '0s', animationDuration: '3s'}}></div>
+        <div className="absolute top-1/3 right-1/4 w-3 h-3 bg-gray-600 rounded-full animate-bounce" style={{animationDelay: '1s', animationDuration: '4s'}}></div>
+        <div className="absolute bottom-1/3 left-1/3 w-2 h-2 bg-gray-600 rounded-full animate-bounce" style={{animationDelay: '2s', animationDuration: '5s'}}></div>
+        <div className="absolute bottom-1/4 right-1/3 w-3 h-3 bg-gray-600 rounded-full animate-bounce" style={{animationDelay: '0.5s', animationDuration: '3.5s'}}></div>
       </div>
       
-      <div className="absolute inset-0 bg-black/20"></div>
+      <div className="absolute inset-0 bg-gray-100/10"></div>
       <div className="relative z-10 container mx-auto px-6 text-center">
         <div className="animate-fade-in-up">
           <h1 className="text-5xl md:text-7xl font-bold font-inter mb-6 leading-tight">
@@ -90,7 +90,7 @@ const HeroSection = () => {
           </p>
           <Button 
             size="lg" 
-            className="bg-white text-primary hover:bg-white/90 text-lg px-8 py-6 rounded-lg font-semibold transition-all duration-300 hover:shadow-xl hover:scale-105"
+            className="bg-primary text-white hover:bg-primary/90 text-lg px-8 py-6 rounded-lg font-semibold transition-all duration-300 hover:shadow-xl hover:scale-105"
           >
             Get Started
           </Button>
