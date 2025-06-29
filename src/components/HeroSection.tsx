@@ -1,9 +1,8 @@
-
 import { Button } from "@/components/ui/button";
 
 const HeroSection = () => {
   return (
-    <section className="relative bg-gradient-primary min-h-screen flex items-center justify-center text-white overflow-hidden">
+    <section className="relative bg-gradient-primary min-h-screen flex items-center justify-center text-white overflow-hidden pt-16">
       <div className="absolute inset-0 bg-black/10"></div>
       <div className="relative z-10 container mx-auto px-6 text-center">
         <div className="animate-fade-in-up">
